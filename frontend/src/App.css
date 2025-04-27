@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -535,4 +536,543 @@ nav > .logo {
     .footer > h3 {
         font-size: 1.2rem; /* Reduce footer font size */
     }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-color: rgb(156, 10, 10);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+/* scroll bar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #111;
+  }
+
+  
+
+.body {
+    border: 2px solid var(--red-color);
+    height: 80vh;
+    width: 75vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 30px;
+}
+
+.section-L {
+    background-color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 30px 0 0 30px;
+}
+
+.register {
+
+    border-radius: 0 30px 30px 0;
+}
+
+/* animation start here  */
+
+.anime-L {
+    transform: translateX(0);
+    animation: anime-l 1s ease forwards;
+}
+
+.anime-R {
+    transform: translateX(-100%);
+    animation: anime-r 1s ease forwards;
+}
+
+@keyframes anime-r {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes anime-l {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* animation ends here  */
+
+.icon-register{
+    transform: translate(-150%);
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.section-L > h1{
+    font-size: 3rem;
+}
+
+.section-L > p {
+    width: 70%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 20px;
+    
+}
+
+.section-R {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-R > h1 {
+    font-size: 3rem;
+}
+
+.section-R > .entry-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-R label {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.section-R input {
+    font-size: 1.5rem;
+    border: 3.5px solid grey;
+    height: 2.3rem;
+    border-radius: 20px;
+    outline: none;
+    padding: 8px;
+    transition: border-color 0.3s ease;
+    
+} 
+
+.eye-btn{
+    border: none;
+    transform: translateX(-150%);
+
+}
+
+.password & .username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: #000;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.section-R input:focus {
+    border-color:  var(--red-color);
+}
+
+
+.login-button {
+    height: 3rem;
+    font-size: 2rem;
+    width: 9rem;
+    margin: auto;
+    background-color: rgb(194, 18, 18);
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.login-button:active {
+    background-color: var(--red-color);
+}
+
+.entry-fields > p {
+    margin: auto;
+    font-size: 1.08rem;
+}
+
+.entry-fields > p > .signup-btn {
+    color: rgb(255, 5, 5);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* header style  */
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid grey;
+    border-radius: 20px;
+}
+
+nav > h1 {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem 0 0 2rem;
+}
+
+nav > .logo {
+    font-size: 2.5rem;
+    display: grid;
+    place-items: end;
+    padding-bottom: 5px;
+    color: var(--red-color);
+}
+
+/* Home page style */
+
+.home {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.account-section {
+    border-right: 2px solid grey;
+    border-radius: 10px;
+}
+
+.account-section h2 {
+    font-size: 1.8rem;
+    padding: 1rem 0 0 2rem;
+}
+
+.account-section h3 {
+    text-align: center;
+    padding: 0.7rem 0 0 0 ;
+    font-size: 1.35rem;
+    color: var(--red-color);
+}
+
+.account-section h3 span {
+    color: beige;
+}
+
+.account-section div .logout-btn {
+    font-size: 1.2rem;
+    width: 70%;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    margin-top:  1rem;
+    font-weight: 600;
+    color: wheat;
+    padding: .3rem 0;
+    cursor: pointer;
+}
+
+.account-section div .logout-btn:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.account-section div {
+    display: grid;
+    place-items: center;
+}
+
+#blog-field {
+    background-color: #0b0b0b;
+    color: white;
+    width: 85%;
+    height: 15rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding: 1rem;
+    resize: none;
+}
+
+
+#blog-field::placeholder {
+    color: #404040;
+}
+
+#upload-btn {
+    background-color: rgb(4, 113, 113);
+    padding: .8rem 0;
+    width: 40%;
+    place-self: end;
+    margin-right: 2.2rem;
+}
+
+.my-blogs {
+    background-color: #0e0d0d;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.my-blogs .tweet {
+    height: 80%;
+    width: 100%;
+}
+
+.my-blogs .tweet .my-tweet-body {
+    width: 100%;
+    text-align: start;
+}
+
+.tweet {
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.7rem 0.2rem;
+}
+
+
+
+#head-tweet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#head-tweet p {
+    color: rgb(143, 148, 151);
+}
+
+.delete-button-div {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(255, 51, 51);
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+#blog {
+    margin: 1rem 0.5rem;
+    background-color: rgb(49, 34, 34);
+}
+
+.blog-section {
+    height: 150vh;
+    overflow-y: scroll;
+}
+
+.like {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(207, 197, 197);
+    cursor: pointer;
+    display: flex;
+    gap: .6rem;
+}
+
+.like:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.like > span {
+    font-size: 1rem;
+    color: #929191;
+}
+
+.like-div {
+    display: flex;
+    justify-content: end;
+}
+
+.footer {
+    background-color: #0e0e0e;
+    border-radius: 15px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.footer > h3 {
+    font-size: 1.5rem;
+    color: #404040;
+}
+
+.footer > h3 > .logo {
+    margin-right: 1rem;
+}
+
+.footer > h3 > span {
+    color: var(--red-color);
+}
+
+
+/* Responsive design  */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .body {
+        width: 90vw; /* Increase width for smaller screens */
+    }
+}
+
+/* For screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .body {
+        grid-template-columns: 100%; /* Stack sections vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    .section-L, .register {
+        border-radius: 30px; /* Reset border radius for stacked layout */
+    }
+
+    .section-L {
+        border-radius: 30px 30px 0 0; /* Adjust border radius for top section */
+    }
+
+    .register {
+        border-radius: 0 0 30px 30px; /* Adjust border radius for bottom section */
+    }
+
+    .section-L > h1, .section-R > h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .section-L > p {
+        width: 90%; /* Increase width for better readability */
+    }
+
+    .section-R input {
+        font-size: 1.2rem; /* Reduce input font size */
+    }
+
+    .login-button {
+        font-size: 1.5rem; /* Reduce button font size */
+        width: 7rem; /* Adjust button width */
+    }
+
+    nav > h1 {
+        font-size: 2rem; /* Reduce nav font size */
+    }
+
+    .home {
+        grid-template-columns: 100%; /* Stack account and blog sections */
+    }
+
+    .account-section {
+        border-right: none; /* Remove border for stacked layout */
+        border-bottom: 2px solid grey; /* Add bottom border for separation */
+    }
+
+    .my-blogs {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
+
+/* For screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+    .body {
+        width: 95vw; /* Further increase width for very small screens */
+    }
+
+    .section-L > h1, .section-R > h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+
+    .section-L > p {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+
+    .section-R input {
+        font-size: 1rem; /* Further reduce input font size */
+    }
+
+    .login-button {
+        font-size: 1.2rem; /* Further reduce button font size */
+        width: 6rem; /* Adjust button width */
+    }
+
+    nav > h1 {
+        font-size: 1.5rem; /* Further reduce nav font size */
+    }
+
+    .account-section h2 {
+        font-size: 1.5rem; /* Reduce account section font size */
+    }
+
+    .account-section h3 {
+        font-size: 1.2rem; /* Reduce account section font size */
+    }
+
+    #blog-field {
+        font-size: 1rem; /* Reduce blog field font size */
+    }
+
+    .footer > h3 {
+        font-size: 1.2rem; /* Reduce footer font size */
+    }
+>>>>>>> b0e80f78adf7f515876dbd9be7827189301a9ab0
 }
